@@ -24,4 +24,4 @@ jobs:
         run: |
           cd dist
           vercel pull --yes
-          npm run deploy
+          vc build --prod --token=QEbx35wVf68mLQHP8YS0Nk1v
