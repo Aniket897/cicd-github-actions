@@ -22,4 +22,6 @@ jobs:
           tree
 
       - name: Deploying to vercel
-        run: npm run deploy
+        run: |
+          cd dist
+          npm run deploy
