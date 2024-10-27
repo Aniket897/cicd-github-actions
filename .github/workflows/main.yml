@@ -16,6 +16,7 @@ jobs:
         run: |
           cd dist
           mkdir .vercel
-          touch ./.vercel/project.json
-          echo "{"orgId":"team_GcOGbS7CaFvf9pC5pFvB3xxf","projectId":"prj_LgEvoZcGZZp1nez868DBkj0hc5hg"}" > ./.vercel/project.json
+          cd .vercel
+          touch project.json
+          echo "{"orgId":"team_GcOGbS7CaFvf9pC5pFvB3xxf","projectId":"prj_LgEvoZcGZZp1nez868DBkj0hc5hg"}" > project.json
           tree
