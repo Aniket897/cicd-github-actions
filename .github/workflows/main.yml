@@ -21,7 +21,7 @@ jobs:
           echo "{"orgId":"team_GcOGbS7CaFvf9pC5pFvB3xxf","projectId":"prj_LgEvoZcGZZp1nez868DBkj0hc5hg"}" > project.json
           tree
 
-      - name : Deploying to vercel
-         run : |
-           tree
-           npm run deploy
+      - name: Deploying to vercel
+        run: |
+          tree
+          npm run deploy
