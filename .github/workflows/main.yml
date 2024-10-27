@@ -1,15 +1,20 @@
 name: first-cicd-pipeline
 on: [push]
 jobs:
-  basic-setup:
+  deploying-to-vercel:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
       - uses: actions/setup-node@v2
         with:
           node-version: 16
-      - name: install node modules
+      - name: Installing dependencies
         run: npm install
-      - name: build the project
+      - name: Building the project
         run: npm run build
-      - run: echo "🍏 This job is done"
+      - name: Deploying to vercel
+        run: cd dist
+          mkdir .vercel
+          touch ./.vercel/project.json
+          echo "{"orgId":"team_GcOGbS7CaFvf9pC5pFvB3xxf","projectId":"prj_LgEvoZcGZZp1nez868DBkj0hc5hg"}" > ./.vercel/project.json
+          tree
