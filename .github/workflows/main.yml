@@ -19,4 +19,4 @@ jobs:
         run: npm run build
 
       - name: Deploy to Vercel
-        run: npx vercel --prod --token $VERCEL_TOKEN yNAbLXPSwXR6FgiLOzTyZIXC --confirm --scope aniket --project test-cicd-actions-vercel
+        run: npx vercel --prod --token yNAbLXPSwXR6FgiLOzTyZIXC --confirm --scope aniket --project test-cicd-actions-vercel
