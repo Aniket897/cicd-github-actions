@@ -6,9 +6,9 @@ jobs:
     steps:
       - uses: actions/checkout@v2
       - uses: actions/setup-node@v2
-        with: "15"
-      - name : install node modules
-        run : npm install
+        with: 14
+      - name: install node modules
+        run: npm install
       - name: build the project
         run: npm run build
-      - run : echo "🍏 This job is done"
+      - run: echo "🍏 This job is done"
