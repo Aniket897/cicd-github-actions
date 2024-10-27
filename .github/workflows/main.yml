@@ -22,6 +22,4 @@ jobs:
           tree
 
       - name: Deploying to vercel
-        run: |
-          tree
-          npm run deploy
+        run: npm run deploy
