@@ -18,10 +18,10 @@ jobs:
           mkdir .vercel
           cd .vercel
           touch project.json
-          echo "{"orgId":"team_GcOGbS7CaFvf9pC5pFvB3xxf","projectId":"prj_LgEvoZcGZZp1nez868DBkj0hc5hg"}" > project.json
+          echo '{"projectId": "prj_LgEvoZcGZZp1nez868DBkj0hc5hg","orgId": "team_GcOGbS7CaFvf9pC5pFvB3xxf"}' > project.json
           tree
-
       - name: Deploying to vercel
         run: |
           cd dist
+          vercel pull --yes
           npm run deploy
