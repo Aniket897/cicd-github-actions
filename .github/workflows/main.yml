@@ -13,3 +13,4 @@ jobs:
       - name: build the project
         run: npm run build
       - run: echo "🍏 This job is done"
+      - run: echo tree
